@@ -183,9 +183,9 @@ public class GraderTest {
     }
 
     @Test
-    void ninetyShouldReturnA() {
+    void oneHundredShouldReturnA() {
         var grader = new Grader();
-        assertEquals('A', grader.determineLetterGrade(90));
+        assertEquals('A', grader.determineLetterGrade(100));
     }
 
     @Test
@@ -201,11 +201,16 @@ public class GraderTest {
 
 Run the tests with coverage to see how much of your code is being tested. For example, right-click the play button and select "Run test with coverage":
 
-![Run Test with Coverage](https://prod-files-secure.s3.us-west-2.amazonaws.com/b82f9a48-cfed-47d2-b9b0-9d52a734b8bd/90d19d33-da69-4926-a158-7f66238fe3fd/Untitled.png)
+![image](https://github.com/user-attachments/assets/048aabd3-244e-4566-95fb-01d644d37fca)
 
 This will show you the coverage report:
 
-![Coverage Report](https://prod-files-secure.s3.us-west-2.amazonaws.com/b82f9a48-cfed-47d2-b9b0-9d52a734b8bd/93d3baec-4a3d-482c-b1fd-37e6975083a1/Untitled.png)
+![image](https://github.com/user-attachments/assets/14e00b92-4bc9-48c6-84b8-fb600eeba026)
+
+We can also see that in the class 
+
+![image](https://github.com/user-attachments/assets/f4d9bf36-6e0c-43d6-ba9c-cdc3929c2601)
+
 
 ### Edge Cases
 
@@ -238,6 +243,7 @@ void eightyShouldReturnB() {
     assertEquals('B', grader.determineLetterGrade(80));
 }
 ```
+Add more test for all other edge cases.
 
 ### Handling Exceptions
 
@@ -251,6 +257,9 @@ void negativeOneShouldReturnIllegalArgumentException() {
             () -> grader.determineLetterGrade(-1));
 }
 ```
+assertThrows expects two parameters:
+1. The first parameter is the exception class that you expect to be thrown.
+2. The second parameter is a lambda function containing the code that should trigger the exception.
 
 ## Reasons to Write Unit Tests
 
