@@ -75,18 +75,6 @@ The test will fail:
 ![image](https://github.com/user-attachments/assets/c58ae4f4-a884-4ea2-b824-d68a8fe2523f)
 
 
-## Other Assert Statements
-
-JUnit provides various assert statements:
-
-```java
- assertNotEquals(sc, sc); //passes if not equal, fails if equal
- assertTrue(sc.add(2,2)== 4);//passes if true, fails if false
- assertFalse(null);
- assertNull(sc);
- assertNotNull(sc);
-```
-
 ## Importance of Multiple Unit Tests
 
 Having only one unit test can be problematic. For example, if your method accidentally uses multiplication instead of addition:
@@ -119,6 +107,18 @@ Running all tests will help identify mistakes in your code:
 
 
 This helps you identify and fix issues, ensuring your code is functioning correctly.
+
+## Other Assert Statements
+
+JUnit provides various assert statements:
+
+```java
+ assertNotEquals(sc, sc); //passes if not equal, fails if equal
+ assertTrue(sc.add(2,2)== 4);//passes if true, fails if false
+ assertFalse(null);
+ assertNull(sc);
+ assertNotNull(sc);
+```
 
 ---
 
