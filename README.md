@@ -1,6 +1,7 @@
 # JUnit Testing with Maven
 
-This guide will help you set up a Maven project, add JUnit dependency, and create unit tests for a simple calculator class.
+
+Used CodingWithJohn video on JUnit testing to learn to set up a Maven project, add JUnit dependency, and create unit tests.
 
 ## Create a Maven Project
 
